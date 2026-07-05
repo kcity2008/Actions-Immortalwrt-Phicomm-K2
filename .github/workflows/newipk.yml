@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: new ipk
 
 on:
   repository_dispatch:
@@ -89,7 +89,7 @@ jobs:
 
     - name: Compile opassistant package
       run: |
-        cd immortalwrt
+        cd openwrt
         make package/opassistant/clean V=s
         make package/opassistant/download V=s
         make package/opassistant/compile V=s
