@@ -1,0 +1,6 @@
+- name: Compile opassistant package
+  run: |
+    cd immortalwrt
+    make package/opassistant/clean V=s
+    make package/opassistant/download V=s
+    make package/opassistant/compile V=s
